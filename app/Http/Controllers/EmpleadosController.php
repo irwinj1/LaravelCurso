@@ -31,4 +31,16 @@ class EmpleadosController extends Controller
         dd($nomina);
         return "El pago es $nomina con dias $diast trabajados y pago diario de $pago";
     }
+    public function salir(){
+        return "salir";
+    }
+    public function vb(){
+        return view('vistabootstrap');
+    }
+    public function vista1(){
+        return view('vista1');
+    }
+    public function vista2(){
+        return view('vista2');
+    }
 }

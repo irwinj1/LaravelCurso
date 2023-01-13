@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{asset('css/estilo.css')}}">
 </head>
 
 <body>
@@ -16,13 +17,16 @@
     @if ($nombre == 'irwin')
         <h2>Hola {{$nombre}}</h2>
         <img src="{{asset('photos/prueba.png')}}" alt="" width="500">
-    @endif
-    @if ($nombre=='jose')
+       
+    
+    @elseif ($nombre=='jose')
         <h2>Hola {{$nombre}}</h2>
-        <img src="{{asset('photos/prueba1.png')}}" alt="" width="500">
+        <img src="{{asset('photos/prueba1.png')}}" alt="" >
     @else
-    <h2>Sin foto</h2>
+        <h2>Sin foto</h2>
     @endif
+    <br>
+    <a href="{{route('salir')}}">Cerrar</a>
 </body>
 
 </html>
